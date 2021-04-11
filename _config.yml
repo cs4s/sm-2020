@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: "UON CS4S ScratchMaths 2020"
+email: "elena.prieto@newcastle.edu.au"
+contact: "Elena Prieto"
+baseurl: "/sm-2020"
+drive_url: "https://drive.google.com/uc?export=view&id="
+
+# Content Pages Paths
+module1_path: "/module1"
+module3_path: "/module3"
+planning_path: "/planning"
+glossary_path: "/glossary"
+resources_path: "/resources"
+
+# Build settings
+markdown: kramdown

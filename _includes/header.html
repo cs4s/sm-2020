@@ -1,0 +1,40 @@
+{% assign current = page.url | split: '/' %}
+
+
+<div id = "navigation-header">
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+    <a class="navbar-brand" href="{{ site.baseurl | append: '/' }}">
+      CS4S ScratchMaths 2020
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item {% if page.url == '/'' %} active {% endif %}">
+          <a class="nav-link" href="{{ site.baseurl | append: '/' }}">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"><p class="nav-symbol">&#9830</p></li>
+        <li class="nav-item {% if page.url contains site.module1_path %} active {% endif %}">
+          <a class="nav-link" href="{{ site.baseurl | append: site.module1_path }}">Module 1</a>
+        </li>
+        <li class="nav-item"><p class="nav-symbol">&#9830</p></li>
+        <li class="nav-item {% if page.url contains site.module3_path %} active {% endif %}">
+          <a class="nav-link" href="{{ site.baseurl | append: site.module3_path }}">Module 3</a>
+        </li>
+        <li class="nav-item"><p class="nav-symbol">&#9830</p></li>
+        <li class="nav-item {% if page.url contains site.planning_path %} active {% endif %}">
+          <a class="nav-link" href="{{ site.baseurl | append: site.planning_path }}">Planning</a>
+        </li>
+        <li class="nav-item"><p class="nav-symbol">&#9830</p></li>
+        <li class="nav-item {% if page.url contains site.glossary_path %} active {% endif %}">
+          <a class="nav-link" href="{{ site.baseurl | append: site.glossary_path }}">Glossary</a>
+        </li>
+        <li class="nav-item"><p class="nav-symbol">&#9830</p></li>
+        <li class="nav-item {% if page.url contains site.resources_path %} active {% endif %}">
+          <a class="nav-link" href="{{ site.baseurl | append: '/resources' }}">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
